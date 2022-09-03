@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class QaScooterPage {
+    //Вопросы о важном
+    //Кноки заказать вверху и внизу
     WebDriver driver;
 
     public QaScooterPage(WebDriver driver) {
@@ -32,12 +34,12 @@ public class QaScooterPage {
         return driver.findElement(questionElementTitle);
     }
 
-    public OrderPage clickOrderUpButton(){
+    public OrderPage clickOrderUpButton() {
         getOrderUpButton().click();
         return new OrderPage(driver);
     }
 
-    public OrderPage clickOrderDownButton(){
+    public OrderPage clickOrderDownButton() {
         getOrderDownButton().click();
         return new OrderPage(driver);
     }

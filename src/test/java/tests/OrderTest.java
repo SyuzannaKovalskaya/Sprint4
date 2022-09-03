@@ -5,7 +5,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class OrderTest extends MainTest {
-
+    //Заказ с верхней кнопки заказать и для Вовы и для Коли
+    //Заказ с нижней кнопки заказать и для Вовы и для Коли
     @Test
     public void fullOrderTestOnUpButtonData1() {
         QaScooterPage qaScooterPage = new QaScooterPage(driver);
@@ -20,11 +21,12 @@ public class OrderTest extends MainTest {
         OrderPage orderPage = qaScooterPage.clickOrderDownButton();
         orderTestData1(orderPage);
     }
+
     @Test
     public void fullOrderTestOnUpButtonData2() {
         QaScooterPage qaScooterPage = new QaScooterPage(driver);
         OrderPage orderPage = qaScooterPage.clickOrderUpButton();
-        orderTestData1(orderPage);
+        orderTestData2(orderPage);
     }
 
     @Test
@@ -32,8 +34,9 @@ public class OrderTest extends MainTest {
         QaScooterPage qaScooterPage = new QaScooterPage(driver);
         qaScooterPage.scrollToElement(qaScooterPage.getOrderDownButton());
         OrderPage orderPage = qaScooterPage.clickOrderDownButton();
-        orderTestData1(orderPage);
+        orderTestData2(orderPage);
     }
+
     private void orderTestData1(OrderPage orderPage) {
         orderPage.setNameInput("Вова");
         orderPage.setSecondNameInput("Васильев");

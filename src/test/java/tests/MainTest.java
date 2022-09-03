@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MainTest {
+    //Вход, драйвера, выход
     WebDriver driver;
     String url = "https://qa-scooter.praktikum-services.ru/";
 
