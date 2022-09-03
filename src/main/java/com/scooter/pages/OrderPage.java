@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class OrderPage {
+    //1 страница заказа
     WebDriver driver;
 
     public OrderPage(WebDriver driver) {

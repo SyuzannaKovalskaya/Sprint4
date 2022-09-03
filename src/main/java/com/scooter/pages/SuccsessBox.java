@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class SuccsessBox {
+    //Итоговый экран в firefox, с номером заказа
     WebDriver driver;
 
     public SuccsessBox(WebDriver driver) {
